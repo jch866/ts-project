@@ -1,0 +1,2 @@
+# ts-project
+typescript study
