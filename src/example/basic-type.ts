@@ -33,7 +33,7 @@ let n:null = null;
 const errorFn = (msg:string):never=>{
     throw new Error(msg)
 }
-const infiniteFn = ():never=>{
+const infiniteFn = ():never=>{   //死循环
     while(true){}
 }
 // let neverVar = ((){

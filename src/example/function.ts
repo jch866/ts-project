@@ -11,9 +11,10 @@ let myfn2 =  (x: number, y: number = 8): number=>{ return x + y; }; // y  设置
 
 const handleData  = (arg1:number,...arg2:number[])=>{}     // 扩展
  
-
+//重载
 function handleData1(x:string):string[];
 function handleData1(x:number):number[];
+//函数实体 不是重载的一部分
 function handleData1(x:any):any{
     if(typeof x ==='string'){
         return x.split('')

@@ -23,7 +23,7 @@ interface Vegetables{
 const getVegetables = ({color,type}:Vegetables)=>{
  return `A ${color?(color+''):''} ${type}`
 }
-let vege = {color:"red",type:'tomato',size:2};
+let vege = {color:"red",type:'tomato',size:2}; //size:2 是多的属性 1.用as  2.Vegetables加一个[prop:string]:any 
 // console.log(getVegetables({color:"red",type:'tomato'} as Vegetables))
 // console.log(getVegetables(vege))
 
@@ -44,7 +44,7 @@ let p1: Point = { x: 10, y: 20 };
 // 最简单判断该用readonly还是const的方法是看要把它做为变量使用还是做为一个属性。 做为变量使用的话用 const，若做为属性则使用readonly。
 
 //函数接口
-// 下面的接口简化成  type addFn =  (num1:number,num2:number) => number 
+// 下面的接口简化成  type addFn =  (num1:number,num2:number) => number  类型别名
 interface addFn {
     (num1:number,num2:number):number
 }
@@ -70,7 +70,7 @@ const role2:RoleDic2 = {
     "a":"super",
     1:'admin'   // 数字类型的key会转成字符串
 }
-
+// const obj5 ={123:'a',"123":'b'}; //{123:'b'}
 //接口继承
 
 interface Vegetable1 {

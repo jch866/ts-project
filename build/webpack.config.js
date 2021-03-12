@@ -7,7 +7,7 @@ module.exports = {
         filename:'main.js'
     },
     resolve:{
-        extensions:['.ts','.tsx','.js']
+        extensions:['.ts','.tsx','.js'] //自动
     },
     module:{
         rules:[{
