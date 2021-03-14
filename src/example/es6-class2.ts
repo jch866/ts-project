@@ -54,10 +54,10 @@ const u1 = new User();
 // console.log(User.getname())
 class Peop{
     constructor(){
-        this.x =0
+        // this.x =0
     }
 }
-Peop.y =1;
+// Peop.y =1;
 let p1 = new Peop();
 // console.log(p1.x) //0
 // console.log(p1.y) // undefined
